@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Horizon Point</h1>
+            <p>Your journey to a modern web design starts here</p>
+            <a href="#about" class="scroll-down">Learn More</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are a team of passionate developers creating modern and user-friendly web designs.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box" data-image="img1.jpg">
+                <h3>Web Design</h3>
+                <p>Creating beautiful and responsive web designs.</p>
+               <img src="img1.jpg" alt="Service Image" class="popup-image">
+            </div> 
+            <div class="service-box" data-image="img2.jpg">
+                <h3>Development</h3>
+                <p>Building robust and scalable web applications.</p>
+                <img src="img2.jpeg" alt="Service Image" class="popup-image">
+            </div>
+            <div class="service-box" data-image="img3.jpg">
+                <h3>SEO</h3>
+                <p>Improving your website's visibility in search engines.</p>
+                <img src="img3.jpg" alt="Service Image" class="popup-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: tauferqkhan77@gmail.com</p>
+        <p>Phone: 7815021399</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Taufeeq Khan. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">Top</button>
+
+    <style>
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .service-box {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .popup-image {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 50%;
+            max-height: 50%;
+            z-index: 9999;
+            border: 2px solid #fff; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+        }
+
+        .service-box:hover .popup-image {
+            display: block;
+        }
+
+        .service-box h3, .service-box p {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+        }
+        .service-box h3 {
+            position: absolute;
+            top: 10px; 
+            left: 10px; 
+            color: #fff;
+            font-size: 20px; 
+        }
+
+        .service-box p {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+        }
+    </style>
+</body>
+</html>
+
